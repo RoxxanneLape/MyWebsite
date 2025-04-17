@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fefefe;
+    color: #333;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  body {
+    font-family: 'fancy-text',;
+    background: #fefefe;
+    color: #ff5656;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    animation: bounceIn 0.6s ease-out;
+  }
+  
+
+  h1 {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  
+  .info {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #005fa3;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  @keyframes rainbow {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+    background-size: 300% 100%;
+    animation: rainbow 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
